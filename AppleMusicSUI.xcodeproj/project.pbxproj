@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C3F42A12B1E68E20026619C /* MiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F42A02B1E68E20026619C /* MiniPlayer.swift */; };
+		7C3F42A32B1E9AB90026619C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F42A22B1E9AB90026619C /* BlurView.swift */; };
 		7CB7099D2B1E5154001849F9 /* AppleMusicSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7099C2B1E5154001849F9 /* AppleMusicSUIApp.swift */; };
 		7CB7099F2B1E5154001849F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7099E2B1E5154001849F9 /* ContentView.swift */; };
 		7CB709A12B1E5155001849F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB709A02B1E5155001849F9 /* Assets.xcassets */; };
 		7CB709A42B1E5155001849F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB709A32B1E5155001849F9 /* Preview Assets.xcassets */; };
+		7CB709AB2B1E52F0001849F9 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB709AA2B1E52F0001849F9 /* LibraryView.swift */; };
+		7CB709AD2B1E55B8001849F9 /* SearchModul.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB709AC2B1E55B8001849F9 /* SearchModul.swift */; };
+		7CB709AF2B1E55DD001849F9 /* RadioModul.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB709AE2B1E55DD001849F9 /* RadioModul.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C3F42A02B1E68E20026619C /* MiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayer.swift; sourceTree = "<group>"; };
+		7C3F42A22B1E9AB90026619C /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		7CB709992B1E5154001849F9 /* AppleMusicSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB7099C2B1E5154001849F9 /* AppleMusicSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSUIApp.swift; sourceTree = "<group>"; };
 		7CB7099E2B1E5154001849F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CB709A02B1E5155001849F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CB709A32B1E5155001849F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7CB709AA2B1E52F0001849F9 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		7CB709AC2B1E55B8001849F9 /* SearchModul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModul.swift; sourceTree = "<group>"; };
+		7CB709AE2B1E55DD001849F9 /* RadioModul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModul.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				7CB7099C2B1E5154001849F9 /* AppleMusicSUIApp.swift */,
 				7CB7099E2B1E5154001849F9 /* ContentView.swift */,
+				7CB709AA2B1E52F0001849F9 /* LibraryView.swift */,
+				7C3F42A02B1E68E20026619C /* MiniPlayer.swift */,
+				7C3F42A22B1E9AB90026619C /* BlurView.swift */,
+				7CB709AC2B1E55B8001849F9 /* SearchModul.swift */,
+				7CB709AE2B1E55DD001849F9 /* RadioModul.swift */,
 				7CB709A02B1E5155001849F9 /* Assets.xcassets */,
 				7CB709A22B1E5155001849F9 /* Preview Content */,
 			);
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB7099F2B1E5154001849F9 /* ContentView.swift in Sources */,
+				7C3F42A32B1E9AB90026619C /* BlurView.swift in Sources */,
+				7CB709AB2B1E52F0001849F9 /* LibraryView.swift in Sources */,
+				7CB709AF2B1E55DD001849F9 /* RadioModul.swift in Sources */,
+				7C3F42A12B1E68E20026619C /* MiniPlayer.swift in Sources */,
 				7CB7099D2B1E5154001849F9 /* AppleMusicSUIApp.swift in Sources */,
+				7CB709AD2B1E55B8001849F9 /* SearchModul.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
