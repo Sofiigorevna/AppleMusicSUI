@@ -40,8 +40,13 @@ struct MiniPlayer: View {
             .padding(.horizontal)
         }
         .frame(height: 80)
-        .background( BlurView())
-        .offset(y: -50)
+        .background(
+            VStack {
+                BlurView()
+                Divider()
+            }
+        )
+        .offset(y: -48)
     }
 }
 

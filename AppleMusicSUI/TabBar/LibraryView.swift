@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LibraryView: View {
+    @Environment(\.editMode) private var editMode
+
     var body: some View {
         
         NavigationView {
@@ -29,7 +31,12 @@ struct LibraryView: View {
             .toolbar {
 
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Править") {print("new scene")}
+                    NavigationLink("Править") {
+                        MediaList()
+                            .navigationBarBackButtonHidden(true)
+                            
+                    }.accentColor(Color.pink)
+                    
                 }
             }
         }
