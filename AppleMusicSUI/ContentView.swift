@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var current = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
+            
+            TabView(selection: $current) {
+                LibraryView()
+                    .tag(0)
+                    .tabItem {
+                        Image(systemName: "play.square.stack")
+                        Text("Медиатека")
+                    }
+                RadioModul()
+                    .tag(1)
+                    .tabItem {
+                        Image(systemName: "dot.radiowaves.left.and.right")
+                        Text("Радио")
+                    }
+                SearchModul()
+                    .tag(2)
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Поиск")
+                    }
+            }.accentColor(Color.pink)
+            
+            MiniPlayer()
+            
         }
-        .padding()
     }
 }
 
