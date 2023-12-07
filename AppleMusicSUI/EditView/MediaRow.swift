@@ -16,13 +16,11 @@ struct MediaRow: View {
             media.image
                 .frame(width: 50, height: 50)
                 .foregroundColor(Color.pink)
-
+            
             Text(media.title)
                 .font(.title2)
             Spacer()
         }
-
-        
     }
 }
 

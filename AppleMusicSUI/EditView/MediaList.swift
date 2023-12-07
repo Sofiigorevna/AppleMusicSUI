@@ -11,7 +11,7 @@ struct MediaList: View  {
     
     
     @State private var selectedMediaIDs: Set<UUID> = []
-
+    
     @State private var models = ModelMedia.panel
     
     
@@ -25,22 +25,16 @@ struct MediaList: View  {
                     self.models.move(fromOffsets: IndexSet, toOffset: index)})
             }.listStyle(.automatic)
                 .environment(\.editMode, .constant(.active))
-            .navigationTitle("Медиатека")
-            
-            
-            .toolbar {
-                
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink("Готово") {
-                        LibraryView()
-                            .navigationBarBackButtonHidden(true)
-                           
-                    }.accentColor(Color.pink)
-                        
-
+                .navigationTitle("Медиатека")
+                .toolbar {
+                    
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink("Готово") {
+                            LibraryView()
+                                .navigationBarBackButtonHidden(true)
+                        }.accentColor(Color.pink)
+                    }
                 }
-            }
-            
         }
     }
 }

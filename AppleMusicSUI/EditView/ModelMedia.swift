@@ -15,8 +15,8 @@ struct ModelMedia: Hashable, Identifiable {
     var title: String
     
     var image: Image {
-          Image(systemName: icon)
-       }
+        Image(systemName: icon)
+    }
 }
 
 extension ModelMedia {
@@ -28,6 +28,6 @@ extension ModelMedia {
         ModelMedia( icon: "music.note", title: "Песни"),
         ModelMedia( icon: "music.note.tv", title: "Видеоклипы"),
         ModelMedia( icon: "music.quarternote.3", title: "Жанры"),
-
+        
     ]
 }

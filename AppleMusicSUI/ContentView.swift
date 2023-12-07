@@ -20,7 +20,6 @@ struct ContentView: View {
                     .tabItem {
                         Image(systemName: "play.square.stack")
                         Text("Медиатека")
-
                     }
                 RadioModul()
                     .tag(1)
@@ -28,21 +27,17 @@ struct ContentView: View {
                         Image(systemName: "dot.radiowaves.left.and.right")
                         Text("Радио")
                     }
-
                 SearchModul()
                     .tag(2)
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
                     }
-
             }.accentColor(Color.pink)
             
             MiniPlayer()
-                
+            
         }
-        
-        
     }
 }
 

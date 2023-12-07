@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LibraryView: View {
     @Environment(\.editMode) private var editMode
-
+    
     var body: some View {
         
         NavigationView {
@@ -24,17 +24,15 @@ struct LibraryView: View {
                     .multilineTextAlignment(.center)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
-                
             }
             .navigationTitle("Медиатека")
-
             .toolbar {
-
+                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink("Править") {
                         MediaList()
                             .navigationBarBackButtonHidden(true)
-                            
+                        
                     }.accentColor(Color.pink)
                     
                 }
@@ -43,8 +41,6 @@ struct LibraryView: View {
     }
     
 }
-        
-        
 
 struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
