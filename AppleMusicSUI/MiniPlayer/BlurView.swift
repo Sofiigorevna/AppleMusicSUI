@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct BlurView: UIViewRepresentable {
-    func updateUIView(_ uiView: UIViewType, context: Context) {}
+  //  func updateUIView(_ uiView: UIViewType, context: Context) {}
+    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
+        
+    }
     
-    func makeUIView(context: Context) -> some UIVisualEffectView {
+    func makeUIView(context: Context) ->  UIVisualEffectView {
         let view = UIVisualEffectView(effect: UIBlurEffect(style: .systemChromeMaterial))
         return view
     }
