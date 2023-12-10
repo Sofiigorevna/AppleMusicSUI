@@ -11,9 +11,16 @@ struct ContentView: View {
     
     @State var current = 0
     
+    
+    // miniplyer properties
+    @State var expand = false
+    @Namespace var animation
+    
     var body: some View {
+        
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             
+
             TabView(selection: $current) {
                 LibraryView()
                     .tag(0)
@@ -33,9 +40,11 @@ struct ContentView: View {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
                     }
+                
             }.accentColor(Color.pink)
             
-            MiniPlayer()
+            MiniPlayer(animation: animation, expend: $expand)
+
             
         }
     }

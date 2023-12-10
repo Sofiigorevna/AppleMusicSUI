@@ -12,6 +12,15 @@
 		7C3F42A82B1EA5700026619C /* ModelMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F42A72B1EA5700026619C /* ModelMedia.swift */; };
 		7C3F42AA2B1EA5C80026619C /* MediaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F42A92B1EA5C80026619C /* MediaRow.swift */; };
 		7C3F42AC2B1EA5E00026619C /* MediaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F42AB2B1EA5E00026619C /* MediaList.swift */; };
+		7CAB62352B223AE9005F02A6 /* CardsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62342B223AE9005F02A6 /* CardsRowView.swift */; };
+		7CAB62372B223B06005F02A6 /* RadioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62362B223B06005F02A6 /* RadioModel.swift */; };
+		7CAB62392B24A43D005F02A6 /* StackRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62382B24A43D005F02A6 /* StackRow.swift */; };
+		7CAB623C2B24B119005F02A6 /* MiniCardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB623B2B24B119005F02A6 /* MiniCardsRow.swift */; };
+		7CAB623E2B24B1B7005F02A6 /* StackMiniCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB623D2B24B1B7005F02A6 /* StackMiniCards.swift */; };
+		7CAB62412B24C069005F02A6 /* RadioModulDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62402B24C069005F02A6 /* RadioModulDetail.swift */; };
+		7CAB62432B24C53C005F02A6 /* RadioModulDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62422B24C53C005F02A6 /* RadioModulDetailRow.swift */; };
+		7CAB62492B25258B005F02A6 /* 01 rington-by.com.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CAB62482B25258B005F02A6 /* 01 rington-by.com.mp3 */; };
+		7CAB624B2B25261C005F02A6 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB624A2B25261C005F02A6 /* AudioManager.swift */; };
 		7CB7099D2B1E5154001849F9 /* AppleMusicSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7099C2B1E5154001849F9 /* AppleMusicSUIApp.swift */; };
 		7CB7099F2B1E5154001849F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7099E2B1E5154001849F9 /* ContentView.swift */; };
 		7CB709A12B1E5155001849F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB709A02B1E5155001849F9 /* Assets.xcassets */; };
@@ -27,6 +36,15 @@
 		7C3F42A72B1EA5700026619C /* ModelMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMedia.swift; sourceTree = "<group>"; };
 		7C3F42A92B1EA5C80026619C /* MediaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRow.swift; sourceTree = "<group>"; };
 		7C3F42AB2B1EA5E00026619C /* MediaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaList.swift; sourceTree = "<group>"; };
+		7CAB62342B223AE9005F02A6 /* CardsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRowView.swift; sourceTree = "<group>"; };
+		7CAB62362B223B06005F02A6 /* RadioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModel.swift; sourceTree = "<group>"; };
+		7CAB62382B24A43D005F02A6 /* StackRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackRow.swift; sourceTree = "<group>"; };
+		7CAB623B2B24B119005F02A6 /* MiniCardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCardsRow.swift; sourceTree = "<group>"; };
+		7CAB623D2B24B1B7005F02A6 /* StackMiniCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackMiniCards.swift; sourceTree = "<group>"; };
+		7CAB62402B24C069005F02A6 /* RadioModulDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModulDetail.swift; sourceTree = "<group>"; };
+		7CAB62422B24C53C005F02A6 /* RadioModulDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModulDetailRow.swift; sourceTree = "<group>"; };
+		7CAB62482B25258B005F02A6 /* 01 rington-by.com.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 rington-by.com.mp3"; sourceTree = "<group>"; };
+		7CAB624A2B25261C005F02A6 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		7CB709992B1E5154001849F9 /* AppleMusicSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB7099C2B1E5154001849F9 /* AppleMusicSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSUIApp.swift; sourceTree = "<group>"; };
 		7CB7099E2B1E5154001849F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				7C3F42A02B1E68E20026619C /* MiniPlayer.swift */,
+				7CAB624A2B25261C005F02A6 /* AudioManager.swift */,
 				7C3F42A22B1E9AB90026619C /* BlurView.swift */,
 			);
 			path = MiniPlayer;
@@ -60,9 +79,9 @@
 		7C26AFD12B20C13300AA6CA6 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				7CB709AA2B1E52F0001849F9 /* LibraryView.swift */,
-				7CB709AC2B1E55B8001849F9 /* SearchModul.swift */,
-				7CB709AE2B1E55DD001849F9 /* RadioModul.swift */,
+				7CAB62332B223A81005F02A6 /* SearchModul */,
+				7CAB62312B223A14005F02A6 /* MediaModul */,
+				7CAB62322B223A6A005F02A6 /* RadioModul */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -75,6 +94,70 @@
 				7C3F42AB2B1EA5E00026619C /* MediaList.swift */,
 			);
 			path = EditView;
+			sourceTree = "<group>";
+		};
+		7CAB62312B223A14005F02A6 /* MediaModul */ = {
+			isa = PBXGroup;
+			children = (
+				7C3F42A62B1EA53F0026619C /* EditView */,
+				7CB709AA2B1E52F0001849F9 /* LibraryView.swift */,
+			);
+			path = MediaModul;
+			sourceTree = "<group>";
+		};
+		7CAB62322B223A6A005F02A6 /* RadioModul */ = {
+			isa = PBXGroup;
+			children = (
+				7CB709AE2B1E55DD001849F9 /* RadioModul.swift */,
+				7CAB62462B250646005F02A6 /* DetailView */,
+				7CAB623F2B24C048005F02A6 /* StackMiniCards */,
+				7CAB623A2B24B0A2005F02A6 /* StackCards */,
+				7CAB62472B250662005F02A6 /* RadioModel */,
+			);
+			path = RadioModul;
+			sourceTree = "<group>";
+		};
+		7CAB62332B223A81005F02A6 /* SearchModul */ = {
+			isa = PBXGroup;
+			children = (
+				7CB709AC2B1E55B8001849F9 /* SearchModul.swift */,
+			);
+			path = SearchModul;
+			sourceTree = "<group>";
+		};
+		7CAB623A2B24B0A2005F02A6 /* StackCards */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB62342B223AE9005F02A6 /* CardsRowView.swift */,
+				7CAB62382B24A43D005F02A6 /* StackRow.swift */,
+			);
+			path = StackCards;
+			sourceTree = "<group>";
+		};
+		7CAB623F2B24C048005F02A6 /* StackMiniCards */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB623B2B24B119005F02A6 /* MiniCardsRow.swift */,
+				7CAB623D2B24B1B7005F02A6 /* StackMiniCards.swift */,
+			);
+			path = StackMiniCards;
+			sourceTree = "<group>";
+		};
+		7CAB62462B250646005F02A6 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB62402B24C069005F02A6 /* RadioModulDetail.swift */,
+				7CAB62422B24C53C005F02A6 /* RadioModulDetailRow.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		7CAB62472B250662005F02A6 /* RadioModel */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB62362B223B06005F02A6 /* RadioModel.swift */,
+			);
+			path = RadioModel;
 			sourceTree = "<group>";
 		};
 		7CB709902B1E5154001849F9 = {
@@ -98,10 +181,10 @@
 			children = (
 				7CB7099C2B1E5154001849F9 /* AppleMusicSUIApp.swift */,
 				7CB7099E2B1E5154001849F9 /* ContentView.swift */,
-				7C3F42A62B1EA53F0026619C /* EditView */,
 				7C26AFD02B20BBFA00AA6CA6 /* MiniPlayer */,
 				7C26AFD12B20C13300AA6CA6 /* TabBar */,
 				7CB709A02B1E5155001849F9 /* Assets.xcassets */,
+				7CAB62482B25258B005F02A6 /* 01 rington-by.com.mp3 */,
 				7CB709A22B1E5155001849F9 /* Preview Content */,
 			);
 			path = AppleMusicSUI;
@@ -174,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB709A42B1E5155001849F9 /* Preview Assets.xcassets in Resources */,
+				7CAB62492B25258B005F02A6 /* 01 rington-by.com.mp3 in Resources */,
 				7CB709A12B1E5155001849F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,12 +273,20 @@
 				7C3F42A82B1EA5700026619C /* ModelMedia.swift in Sources */,
 				7C3F42A32B1E9AB90026619C /* BlurView.swift in Sources */,
 				7C3F42AA2B1EA5C80026619C /* MediaRow.swift in Sources */,
+				7CAB62412B24C069005F02A6 /* RadioModulDetail.swift in Sources */,
 				7CB709AB2B1E52F0001849F9 /* LibraryView.swift in Sources */,
+				7CAB624B2B25261C005F02A6 /* AudioManager.swift in Sources */,
+				7CAB62392B24A43D005F02A6 /* StackRow.swift in Sources */,
+				7CAB623E2B24B1B7005F02A6 /* StackMiniCards.swift in Sources */,
 				7CB709AF2B1E55DD001849F9 /* RadioModul.swift in Sources */,
 				7C3F42A12B1E68E20026619C /* MiniPlayer.swift in Sources */,
+				7CAB62432B24C53C005F02A6 /* RadioModulDetailRow.swift in Sources */,
+				7CAB62352B223AE9005F02A6 /* CardsRowView.swift in Sources */,
+				7CAB623C2B24B119005F02A6 /* MiniCardsRow.swift in Sources */,
 				7C3F42AC2B1EA5E00026619C /* MediaList.swift in Sources */,
 				7CB7099D2B1E5154001849F9 /* AppleMusicSUIApp.swift in Sources */,
 				7CB709AD2B1E55B8001849F9 /* SearchModul.swift in Sources */,
+				7CAB62372B223B06005F02A6 /* RadioModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
