@@ -15,6 +15,21 @@ struct MiniPlayer: View {
     
     var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
     
+    // for music
+    @Namespace private var playerAnimation
+    @State private var showControls = true
+    @State private var isPlaying = false
+    
+    @State private var isDraggingSlider = false
+    
+    @ObservedObject var audioManager = AudioPlayer.shared
+    
+    func formattedTime(_ time: TimeInterval) -> String {
+        let minute = Int(time) / 60
+        let seconds = Int(time) % 60
+        return String(format: "%02d:%02d", minute, seconds)
+    }
+    
     var body: some View {
         VStack{
             Capsule()
@@ -34,6 +49,7 @@ struct MiniPlayer: View {
                     .frame(width: expend ? height: 55, height: expend ? height: 55)
                     .cornerRadius(8)
                 
+                
                 if !expend {
                     Text("Guf - Ice Baby")
                         .font(.title2)
@@ -44,26 +60,31 @@ struct MiniPlayer: View {
                 Spacer(minLength: 0)
                 
                 if !expend {
-                    Button(action: {}) {
-                        Image(systemName: "play.fill")
+                    Button {
+                        audioManager.playPause()
+                        isPlaying.toggle()
+                    } label: {
+                        Image(systemName: isPlaying ? "pause.fill" : "play.fill")
                             .font(.title2)
+                            .font(.system(size: 35))
                             .foregroundColor(.primary)
                     }
                     
                     Button(action: {}) {
                         Image(systemName: "forward.fill")
                             .font(.title2)
+                            .font(.system(size: 35))
                             .foregroundColor(.primary)
                     }
                 }
-               
+                
             }
             .padding(.horizontal)
             
             VStack(spacing: 15){
                 
                 Spacer(minLength: 0)
-               
+                
                 HStack {
                     if expend {
                         Text("Guf - Ice Baby")
@@ -72,46 +93,83 @@ struct MiniPlayer: View {
                             .fontWeight(.bold)
                             .matchedGeometryEffect(id: "Label", in: animation)
                     }
+                    
                     Spacer(minLength: 0)
-
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "ellips.circle")
-                            .font(.title2)
-                            .foregroundColor(.primary)
-                    }
-
                 }
                 .padding()
                 .padding(.top, 20)
                 
-                // live
-                
-                HStack{
-                    Capsule().fill(LinearGradient(gradient: .init(colors: [Color.primary.opacity(0.7), Color.primary.opacity(0.1)]), startPoint: .leading, endPoint: .trailing))
-                            .frame(height: 4)
-                            
-                    Text("LIVE")
-                        .fontWeight(.bold)
-                        .foregroundColor(.primary)
+                // slider
+                VStack{
+                    HStack{
+                        
+                        Text(formattedTime(audioManager.currentTime))
+                        Spacer()
+                        Text(formattedTime(audioManager.duration))
+                    }
+                    .padding()
                     
-                    Capsule().fill(LinearGradient(gradient: .init(colors: [Color.primary.opacity(0.1), Color.primary.opacity(0.7)]), startPoint: .leading, endPoint: .trailing))
-                            .frame(height: 4)
-                }
-                .padding()
-                
-                //stop button
-                
-                Button {
-                    
-                } label: {
-                    Image(systemName: "stop.fill")
-                        .font(.largeTitle)
-                        .foregroundColor(.primary)
-                }.padding()
+                    Slider(value: $audioManager.currentTime, in: 0...audioManager.duration) { editing in
+                        isDraggingSlider = editing
+                        if !editing {
+                            audioManager.seek(to: audioManager.currentTime)
+                            if isPlaying {
+                                audioManager.playPause()
+                            }
+                        }
+                    }
+                    .disabled(audioManager.duration.isZero)
+                    .padding()
 
+                }
                 
+                // stop/play button
+                HStack{
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "gobackward.15")
+                            .font(.system(size: 35))
+                            .foregroundColor(.primary)
+                            .padding()
+                            .onTapGesture {
+                                let newTime = audioManager.currentTime - 10
+                                if newTime < 0 {
+                                    audioManager.seek(to: 0)
+                                } else {
+                                    audioManager.seek(to: newTime)
+                                }
+                            }
+                    }
+                    
+                    Button {
+                        audioManager.playPause()
+                        isPlaying.toggle()
+                    } label: {
+                        Image(systemName: isPlaying ? "pause.circle.fill" :  "play.circle.fill")
+                            .font(.system(size: 50))
+                            .foregroundColor(.primary)
+                            .padding()
+                    }
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "goforward.15")
+                            .font(.system(size: 35))
+                            .foregroundColor(.primary)
+                            .padding()
+                            .onTapGesture {
+                                let newTime = audioManager.currentTime + 10
+                                if newTime > audioManager.duration {
+                                    audioManager.seek(to: audioManager.duration)
+                                } else {
+                                    audioManager.seek(to: newTime)
+                                }
+                         }
+                    }
+                    
+                }
                 
                 Spacer(minLength: 0)
             }
@@ -119,6 +177,20 @@ struct MiniPlayer: View {
             .opacity(expend ? 1 : 0)
         }
         .frame(maxHeight: expend ? .infinity : 80)
+        
+        .onTapGesture {
+            showControls.toggle()
+            Timer.scheduledTimer(withTimeInterval: 0.15, repeats: false){
+                timer in
+                withAnimation(.spring()) {
+                    expend.toggle()
+                    
+                }
+            }
+        }
+        .onAppear{
+            audioManager.setAudioPlayer(fileName: "01 rington-by.com")
+        }
         .background(
             VStack {
                 BlurView().opacity(1)
@@ -135,8 +207,4 @@ struct MiniPlayer: View {
     }
 }
 
-//struct MiniPlayer_Previews: PreviewProvider {
-//    static var previews: some View {
-//      //  MiniPlayer(animation: , expend: <#Binding<Bool>#>)
-//    }
-//}
+

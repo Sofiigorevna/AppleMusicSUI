@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct BlurView: UIViewRepresentable {
-  //  func updateUIView(_ uiView: UIViewType, context: Context) {}
+ 
     func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
-        
     }
     
     func makeUIView(context: Context) ->  UIVisualEffectView {
