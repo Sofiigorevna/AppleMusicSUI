@@ -133,7 +133,7 @@ struct MiniPlayer: View {
                             .foregroundColor(.primary)
                             .padding()
                             .onTapGesture {
-                                let newTime = audioManager.currentTime - 10
+                                let newTime = audioManager.currentTime - 15
                                 if newTime < 0 {
                                     audioManager.seek(to: 0)
                                 } else {
@@ -160,7 +160,7 @@ struct MiniPlayer: View {
                             .foregroundColor(.primary)
                             .padding()
                             .onTapGesture {
-                                let newTime = audioManager.currentTime + 10
+                                let newTime = audioManager.currentTime + 15
                                 if newTime > audioManager.duration {
                                     audioManager.seek(to: audioManager.duration)
                                 } else {
