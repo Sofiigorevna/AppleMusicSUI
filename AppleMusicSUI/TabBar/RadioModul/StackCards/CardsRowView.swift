@@ -38,7 +38,7 @@ struct CardsRowView: View {
                 
             }.frame(width: 300, height: 240)
             .cornerRadius(20)
-        
+
     }
     
 }
@@ -49,6 +49,6 @@ struct CardsRowView: View {
 
 struct CardsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        CardsRowView(card: Cards(colors: [.purple,.yellow], nameCard: "Hits", nameBackground: "Hits"))
+        CardsRowView(card: Cards.category[0])
     }
 }

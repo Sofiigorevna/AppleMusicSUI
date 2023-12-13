@@ -25,6 +25,6 @@ struct StackMiniCards: View {
 
 struct StackMiniCards_Previews: PreviewProvider {
     static var previews: some View {
-        StackMiniCards(card: Cards(colors: [.purple,.yellow], nameCard: "Hits", nameBackground: "Hits"))
+        StackMiniCards(card: Cards.category[0])
     }
 }
