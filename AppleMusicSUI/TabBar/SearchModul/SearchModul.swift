@@ -83,10 +83,11 @@ struct SearchModul: View {
                     }
                 }
                 }
+                .padding(.bottom, 80)
+
             }
 
         }
-        .padding(.bottom, 80)
 
     }
 }

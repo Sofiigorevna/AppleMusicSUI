@@ -37,11 +37,16 @@ struct ContentView: View {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
                     }
-                
             }.accentColor(Color.pink)
-            
-            MiniPlayer(animation: animation, expend: $expand)
         }
+        .safeAreaInset(edge: .bottom) {
+            MiniPlayer(animation: animation, expend: $expand)
+
+
+        }
+        .ignoresSafeArea(expand ? .all : .keyboard)
+            
+        
     }
 }
 
