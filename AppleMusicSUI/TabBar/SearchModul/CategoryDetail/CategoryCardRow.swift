@@ -23,19 +23,15 @@ struct CategoryCardRow: View {
                     .fontDesign(.serif)
                     .opacity(0.9)
                 
-                
                 Text(card.nameCard)
                     .font(Font.system(size: 20))
                     .bold()
                     .foregroundColor(.white)
-//                    .padding(.trailing, 90)
                     .padding(.top, 100)
                     
             }.frame(width: 180, height: 150)
             .cornerRadius(20)
-        
     }
-    
 }
 
 struct CategoryCardRow_Previews: PreviewProvider {

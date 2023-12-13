@@ -13,9 +13,7 @@ struct CardsRowView: View {
     
     var body: some View {
     
-    
         LinearGradient(colors: card.colors, startPoint: .topTrailing, endPoint: .bottomTrailing)
-        
         
             .overlay {
                 Text(card.nameBackground)
@@ -26,7 +24,6 @@ struct CardsRowView: View {
                     .padding([ .leading, .top], 70)
                     .fontDesign(.serif)
                     .opacity(0.2)
-                
                 
                 Text(card.nameCard)
                     .font(Font.system(size: 25))
@@ -42,10 +39,6 @@ struct CardsRowView: View {
     }
     
 }
-
-
-
-
 
 struct CardsRowView_Previews: PreviewProvider {
     static var previews: some View {

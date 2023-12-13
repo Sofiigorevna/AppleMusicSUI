@@ -31,8 +31,6 @@ struct CategoryCardDetail: View {
                         
                         NavigationLink {
                             
-                           
-                            
                         } label: {
                             HStack {
                                 Text("Популярные плейлисты")
@@ -41,7 +39,6 @@ struct CategoryCardDetail: View {
                                 
                                     .font(.subheadline)
                             }
-                            
                         }
                         .buttonStyle(.plain)
                         .font(.title2)
@@ -49,7 +46,6 @@ struct CategoryCardDetail: View {
                         .padding(.bottom, -10)
                         .padding(.trailing, 90)
                         
-                       
                         ScrollView(.horizontal) {
                             LazyHGrid(rows: rowsTwo, spacing: 0.1){
                                 ForEach(genre) { card in
@@ -59,11 +55,7 @@ struct CategoryCardDetail: View {
                         }
                     }
                     .padding(.bottom, 80)
-
-                   
                 }
-                
-                    
             }
         }
     }

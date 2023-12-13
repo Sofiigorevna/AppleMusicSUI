@@ -135,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				7CB709AC2B1E55B8001849F9 /* SearchModul.swift */,
-				7CAB625C2B27EC42005F02A6 /* SearchBar */,
+				7CAB625C2B27EC42005F02A6 /* SongsView */,
 				7CAB62582B27EB96005F02A6 /* CategoryDetail */,
 				7CAB62592B27EBA8005F02A6 /* DetailCards */,
 			);
@@ -195,14 +195,14 @@
 			path = DetailCards;
 			sourceTree = "<group>";
 		};
-		7CAB625C2B27EC42005F02A6 /* SearchBar */ = {
+		7CAB625C2B27EC42005F02A6 /* SongsView */ = {
 			isa = PBXGroup;
 			children = (
 				7CAB62612B28FBEE005F02A6 /* ModelSongs.swift */,
 				7C6036D12B2A05D50071F7A9 /* SearchObservableObject.swift */,
 				7CAB62632B290013005F02A6 /* SongRowView.swift */,
 			);
-			path = SearchBar;
+			path = SongsView;
 			sourceTree = "<group>";
 		};
 		7CB709902B1E5154001849F9 = {

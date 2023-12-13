@@ -11,9 +11,8 @@ struct DetailCardsRow: View {
     var card: Cards
 
     var body: some View {
+        
         LinearGradient(colors: card.colors, startPoint: .top, endPoint: .trailing)
-
-
             .overlay {
                 Text(card.nameBackground)
                 
