@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @State var current = 0
-    
     
     // miniplyer properties
     @State var expand = false
@@ -20,7 +18,6 @@ struct ContentView: View {
         
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             
-
             TabView(selection: $current) {
                 LibraryView()
                     .tag(0)
@@ -44,8 +41,6 @@ struct ContentView: View {
             }.accentColor(Color.pink)
             
             MiniPlayer(animation: animation, expend: $expand)
-
-            
         }
     }
 }

@@ -30,6 +30,6 @@ struct RadioModulDetailRow: View {
 
 struct RadioModulDetailRow_Previews: PreviewProvider {
     static var previews: some View {
-        RadioModulDetailRow(card:Cards(colors: [.purple,.yellow], nameCard: "Classic rocs", nameBackground: "Hits"))
+        RadioModulDetailRow(card: Cards.category[0])
     }
 }

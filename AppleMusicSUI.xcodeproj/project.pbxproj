@@ -12,6 +12,7 @@
 		7C3F42A82B1EA5700026619C /* ModelMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F42A72B1EA5700026619C /* ModelMedia.swift */; };
 		7C3F42AA2B1EA5C80026619C /* MediaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F42A92B1EA5C80026619C /* MediaRow.swift */; };
 		7C3F42AC2B1EA5E00026619C /* MediaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F42AB2B1EA5E00026619C /* MediaList.swift */; };
+		7C6036D22B2A05D50071F7A9 /* SearchObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6036D12B2A05D50071F7A9 /* SearchObservableObject.swift */; };
 		7CAB62352B223AE9005F02A6 /* CardsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62342B223AE9005F02A6 /* CardsRowView.swift */; };
 		7CAB62372B223B06005F02A6 /* RadioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62362B223B06005F02A6 /* RadioModel.swift */; };
 		7CAB62392B24A43D005F02A6 /* StackRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62382B24A43D005F02A6 /* StackRow.swift */; };
@@ -21,6 +22,12 @@
 		7CAB62432B24C53C005F02A6 /* RadioModulDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62422B24C53C005F02A6 /* RadioModulDetailRow.swift */; };
 		7CAB62492B25258B005F02A6 /* 01 rington-by.com.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CAB62482B25258B005F02A6 /* 01 rington-by.com.mp3 */; };
 		7CAB624B2B25261C005F02A6 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB624A2B25261C005F02A6 /* AudioManager.swift */; };
+		7CAB62512B27B39C005F02A6 /* CategoryCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62502B27B39C005F02A6 /* CategoryCardRow.swift */; };
+		7CAB62532B27C44E005F02A6 /* CategoryCardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62522B27C44E005F02A6 /* CategoryCardDetail.swift */; };
+		7CAB62552B27E2FE005F02A6 /* DetailCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62542B27E2FE005F02A6 /* DetailCards.swift */; };
+		7CAB62572B27E359005F02A6 /* DetailCardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62562B27E359005F02A6 /* DetailCardsRow.swift */; };
+		7CAB62622B28FBEE005F02A6 /* ModelSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62612B28FBEE005F02A6 /* ModelSongs.swift */; };
+		7CAB62642B290013005F02A6 /* SongRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB62632B290013005F02A6 /* SongRowView.swift */; };
 		7CB7099D2B1E5154001849F9 /* AppleMusicSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7099C2B1E5154001849F9 /* AppleMusicSUIApp.swift */; };
 		7CB7099F2B1E5154001849F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7099E2B1E5154001849F9 /* ContentView.swift */; };
 		7CB709A12B1E5155001849F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB709A02B1E5155001849F9 /* Assets.xcassets */; };
@@ -36,6 +43,7 @@
 		7C3F42A72B1EA5700026619C /* ModelMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMedia.swift; sourceTree = "<group>"; };
 		7C3F42A92B1EA5C80026619C /* MediaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRow.swift; sourceTree = "<group>"; };
 		7C3F42AB2B1EA5E00026619C /* MediaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaList.swift; sourceTree = "<group>"; };
+		7C6036D12B2A05D50071F7A9 /* SearchObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchObservableObject.swift; sourceTree = "<group>"; };
 		7CAB62342B223AE9005F02A6 /* CardsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRowView.swift; sourceTree = "<group>"; };
 		7CAB62362B223B06005F02A6 /* RadioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModel.swift; sourceTree = "<group>"; };
 		7CAB62382B24A43D005F02A6 /* StackRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackRow.swift; sourceTree = "<group>"; };
@@ -45,6 +53,12 @@
 		7CAB62422B24C53C005F02A6 /* RadioModulDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModulDetailRow.swift; sourceTree = "<group>"; };
 		7CAB62482B25258B005F02A6 /* 01 rington-by.com.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 rington-by.com.mp3"; sourceTree = "<group>"; };
 		7CAB624A2B25261C005F02A6 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		7CAB62502B27B39C005F02A6 /* CategoryCardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardRow.swift; sourceTree = "<group>"; };
+		7CAB62522B27C44E005F02A6 /* CategoryCardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardDetail.swift; sourceTree = "<group>"; };
+		7CAB62542B27E2FE005F02A6 /* DetailCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCards.swift; sourceTree = "<group>"; };
+		7CAB62562B27E359005F02A6 /* DetailCardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCardsRow.swift; sourceTree = "<group>"; };
+		7CAB62612B28FBEE005F02A6 /* ModelSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSongs.swift; sourceTree = "<group>"; };
+		7CAB62632B290013005F02A6 /* SongRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowView.swift; sourceTree = "<group>"; };
 		7CB709992B1E5154001849F9 /* AppleMusicSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB7099C2B1E5154001849F9 /* AppleMusicSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSUIApp.swift; sourceTree = "<group>"; };
 		7CB7099E2B1E5154001849F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				7CB709AC2B1E55B8001849F9 /* SearchModul.swift */,
+				7CAB625C2B27EC42005F02A6 /* SongsView */,
+				7CAB62582B27EB96005F02A6 /* CategoryDetail */,
+				7CAB62592B27EBA8005F02A6 /* DetailCards */,
 			);
 			path = SearchModul;
 			sourceTree = "<group>";
@@ -158,6 +175,34 @@
 				7CAB62362B223B06005F02A6 /* RadioModel.swift */,
 			);
 			path = RadioModel;
+			sourceTree = "<group>";
+		};
+		7CAB62582B27EB96005F02A6 /* CategoryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB62502B27B39C005F02A6 /* CategoryCardRow.swift */,
+				7CAB62522B27C44E005F02A6 /* CategoryCardDetail.swift */,
+			);
+			path = CategoryDetail;
+			sourceTree = "<group>";
+		};
+		7CAB62592B27EBA8005F02A6 /* DetailCards */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB62542B27E2FE005F02A6 /* DetailCards.swift */,
+				7CAB62562B27E359005F02A6 /* DetailCardsRow.swift */,
+			);
+			path = DetailCards;
+			sourceTree = "<group>";
+		};
+		7CAB625C2B27EC42005F02A6 /* SongsView */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB62612B28FBEE005F02A6 /* ModelSongs.swift */,
+				7C6036D12B2A05D50071F7A9 /* SearchObservableObject.swift */,
+				7CAB62632B290013005F02A6 /* SongRowView.swift */,
+			);
+			path = SongsView;
 			sourceTree = "<group>";
 		};
 		7CB709902B1E5154001849F9 = {
@@ -271,8 +316,12 @@
 			files = (
 				7CB7099F2B1E5154001849F9 /* ContentView.swift in Sources */,
 				7C3F42A82B1EA5700026619C /* ModelMedia.swift in Sources */,
+				7CAB62532B27C44E005F02A6 /* CategoryCardDetail.swift in Sources */,
+				7CAB62572B27E359005F02A6 /* DetailCardsRow.swift in Sources */,
 				7C3F42A32B1E9AB90026619C /* BlurView.swift in Sources */,
 				7C3F42AA2B1EA5C80026619C /* MediaRow.swift in Sources */,
+				7CAB62622B28FBEE005F02A6 /* ModelSongs.swift in Sources */,
+				7C6036D22B2A05D50071F7A9 /* SearchObservableObject.swift in Sources */,
 				7CAB62412B24C069005F02A6 /* RadioModulDetail.swift in Sources */,
 				7CB709AB2B1E52F0001849F9 /* LibraryView.swift in Sources */,
 				7CAB624B2B25261C005F02A6 /* AudioManager.swift in Sources */,
@@ -280,8 +329,11 @@
 				7CAB623E2B24B1B7005F02A6 /* StackMiniCards.swift in Sources */,
 				7CB709AF2B1E55DD001849F9 /* RadioModul.swift in Sources */,
 				7C3F42A12B1E68E20026619C /* MiniPlayer.swift in Sources */,
+				7CAB62642B290013005F02A6 /* SongRowView.swift in Sources */,
 				7CAB62432B24C53C005F02A6 /* RadioModulDetailRow.swift in Sources */,
+				7CAB62512B27B39C005F02A6 /* CategoryCardRow.swift in Sources */,
 				7CAB62352B223AE9005F02A6 /* CardsRowView.swift in Sources */,
+				7CAB62552B27E2FE005F02A6 /* DetailCards.swift in Sources */,
 				7CAB623C2B24B119005F02A6 /* MiniCardsRow.swift in Sources */,
 				7C3F42AC2B1EA5E00026619C /* MediaList.swift in Sources */,
 				7CB7099D2B1E5154001849F9 /* AppleMusicSUIApp.swift in Sources */,

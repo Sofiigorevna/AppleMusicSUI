@@ -1,36 +1,36 @@
 //
-//  StackRow.swift
+//  DetailCards.swift
 //  AppleMusicSUI
 //
-//  Created by 1234 on 09.12.2023.
+//  Created by 1234 on 12.12.2023.
 //
 
 import SwiftUI
 
-struct StackRow: View {
+struct DetailCards: View {
     var card: Cards
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("избранная радиостанция")
+            Text("избранныйплейлист")
                 .bold()
                 .font(.subheadline)
                 .foregroundColor(.gray)
-            Text(card.nameCard)
+            Text("Золотой запас")
                 .bold()
                 .font(.system(size: 24))
             Text("Станция Apple Music")
                 .font(.subheadline)
                 .foregroundColor(.gray)
 
-            CardsRowView(card: card)
+            DetailCardsRow(card: card)
             
         }
     }
 }
 
-struct StackRow_Previews: PreviewProvider {
+struct DetailCards_Previews: PreviewProvider {
     static var previews: some View {
-        StackRow(card: Cards.category[0])
+        DetailCards(card: Cards.category[0])
     }
 }

@@ -12,7 +12,6 @@ struct MiniCardsRow: View {
     
     var body: some View {
     
-    
         LinearGradient(colors: card.colors, startPoint: .topTrailing, endPoint: .bottomTrailing)
         
             .overlay {
@@ -55,6 +54,6 @@ struct MiniCardsRow: View {
 
 struct MiniCardsRow_Previews: PreviewProvider {
     static var previews: some View {
-        MiniCardsRow(card: Cards(colors: [.purple,.yellow], nameCard: "Classic rocs", nameBackground: "Hits"))
+        MiniCardsRow(card: Cards.category[0])
     }
 }
