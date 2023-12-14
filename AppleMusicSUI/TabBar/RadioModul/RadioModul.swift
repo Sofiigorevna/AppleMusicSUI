@@ -30,16 +30,15 @@ struct RadioModul: View {
                     }
                     
                     NavigationLink {
-                        
                         RadioModulDetail()
-                            .navigationBarBackButtonHidden(true)
+                            .toolbarRole(.editor)
+                            .navigationBarTitle("Станции по жанрам", displayMode: .inline)
                         
                     } label: {
                         HStack {
                             Text("Станции по жанрам")
                             Image(systemName: "chevron.right")
                                 .renderingMode(.original)
-                            
                                 .font(.subheadline)
                         }
                         

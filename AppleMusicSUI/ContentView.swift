@@ -37,15 +37,19 @@ struct ContentView: View {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
                     }
+                SearchUIKit()
+                    .tag(3)
+                    .tabItem {
+                        Image(systemName: "sparkle.magnifyingglass")
+                        Text("Search UIKit")
+                    }
             }.accentColor(Color.pink)
         }
         .safeAreaInset(edge: .bottom) {
             MiniPlayer(animation: animation, expend: $expand)
-
-
         }
         .ignoresSafeArea(expand ? .all : .keyboard)
-            
+        
         
     }
 }
