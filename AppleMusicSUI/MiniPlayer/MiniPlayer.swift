@@ -204,6 +204,7 @@ struct MiniPlayer: View {
         )
         .ignoresSafeArea()
         .offset(y: expend ? 0 : -48)
+
     }
 }
 

@@ -10,6 +10,8 @@ import SwiftUI
 struct SearchModul: View {
     @StateObject var object = SearchObservableObject()
     @State private var searchTerm = ""
+    @State private var searchPlaceholder: String = "Ваша медиатека"
+    @State private var selectedSearch = 1
     
     @State private var cards = Cards.category
     
@@ -30,24 +32,9 @@ struct SearchModul: View {
                     ForEach(cards) { card in
                         NavigationLink {
                             CategoryCardDetail()
-                                .navigationBarTitle(Text(card.nameCard), displayMode: .large)
-                            
-                                .toolbar {
-                                    ToolbarItem(placement: .navigationBarLeading ) {
-                                        NavigationLink {
-                                            SearchModul()
-                                                .navigationBarBackButtonHidden(true)
-                                            
-                                        } label: {
-                                            Image(systemName: "chevron.left")
-                                                .renderingMode(.original)
-                                            
-                                        }
-                                        .accentColor(Color.pink)
-                                    }
-                                }
-                                .navigationBarBackButtonHidden(true)
-                            
+                                .toolbarRole(.editor)
+                                .navigationBarTitle(card.nameCard, displayMode: .inline)
+   
                         } label: {
                             CategoryCardRow(card: card)
                             
@@ -57,7 +44,22 @@ struct SearchModul: View {
                 
                 .navigationTitle("Поиск")
                 
-                .searchable(text: $searchTerm, prompt: "Артисты, песни в Apple Misic") {
+                .searchable(text: $searchTerm, placement: .navigationBarDrawer(displayMode: .always), prompt: self.$searchPlaceholder.wrappedValue) {
+                    
+                    VStack(alignment: .leading) {
+                        Picker("SearchSource", selection: $selectedSearch) {
+                            Text("Apple Music").tag(0)
+                            Text("Ваша медиатека").tag(1)
+                        }
+                    .onChange(of: selectedSearch) { tag in
+                        if tag == 0 {
+                            searchPlaceholder = "Артисты, песни, тексты и др."
+                        } else {
+                            searchPlaceholder = "Ваша медиатека"
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                }
                     
                     Section("Альбомы") {
                         ForEach(object.searchResults) { card in
@@ -83,10 +85,11 @@ struct SearchModul: View {
                     }
                 }
                 }
+                .padding(.bottom, 80)
+
             }
 
         }
-        .padding(.bottom, 80)
 
     }
 }

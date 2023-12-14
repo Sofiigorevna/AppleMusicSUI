@@ -11,7 +11,7 @@ struct AppleMusicSUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainModul()
             
         }
     }

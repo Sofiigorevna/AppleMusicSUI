@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainModul: View {
     @State var current = 0
     
     // miniplyer properties
@@ -37,16 +37,25 @@ struct ContentView: View {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")
                     }
-                
+                SearchUIKit()
+                    .tag(3)
+                    .tabItem {
+                        Image(systemName: "sparkle.magnifyingglass")
+                        Text("Search UIKit")
+                    }
             }.accentColor(Color.pink)
-            
+        }
+        .safeAreaInset(edge: .bottom) {
             MiniPlayer(animation: animation, expend: $expand)
         }
+        .ignoresSafeArea(expand ? .all : .keyboard)
+        
+        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainModul_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainModul()
     }
 }
